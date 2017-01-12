@@ -36,9 +36,10 @@ export default class ReactButton extends Component {
 
     render() {
         return (
-                <span id="reactApp1" className="react-container">
+                <span id="reactApp1" className="item-container">
                     <button onClick={this.onClick.bind(this)}  className="btn btn-primary">{this.props.label}</button>
-                
+                    <br/>
+                    <textarea className="item-text" />
                 </span>
 
 

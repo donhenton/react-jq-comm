@@ -1,7 +1,26 @@
 .buttonItem
 {
-    display: inline;
+    //display: inline;
     margin-left: 20px;
     
 }
-
+#displayTable
+{
+    td
+    {
+        width: 33%;
+        text-align: center;
+    }
+    width: 100%;
+    
+    .buttonItem
+    {
+        .item-text
+        {
+            width: 200px;
+            margin-top: 20px;
+            height: 200px;
+        }
+    }
+}
+ 
