@@ -1,0 +1,24 @@
+ #breadCrumbList
+ {
+     .mainCrumb
+     {
+         font-weight: bolder;
+         text-decoration: none;
+         text-transform: capitalize;
+         
+     }
+     
+     .crumbItem
+     {
+         margin-right: 15px;
+         text-decoration: underline;
+         text-transform: capitalize;
+     }
+     .crumbArrow
+     {
+         margin-right: 15px;
+         
+     }
+     
+     
+ }

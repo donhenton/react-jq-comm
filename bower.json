@@ -1,0 +1,14 @@
+{
+  "name": "react-jq-comm",
+  "version": "1.0.0",
+  "main": "path/to/main.css",
+  "ignore": [
+    ".jshintrc",
+    "**/*.txt"
+  ],
+  "dependencies": {
+    "postal.js": "postal#^2.0.4",
+    "jquery": "2.2.2"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,25 @@
+.nameContainer
+{ 
+    width: 33%;
+    display: inline-table;
+    span.addSelector
+    {
+        cursor: pointer;
+
+    }
+
+    a.addLink
+    {
+        text-decoration: none;
+        float: right;
+
+        &:visited
+            {
+            color: black;
+        }
+        &.invert,&.invert:visited
+            {
+            color:white;
+        }
+    }
+}
