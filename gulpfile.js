@@ -98,6 +98,15 @@ gulp.task('copy-assets', function () {
               .pipe(gulp.dest(props.targetLocation+'/icons'));
        gulp.src(['./src/html/**/*.css'] )
               .pipe(gulp.dest(props.targetLocation));
+      
+         gulp.src(['./src/bower_components/lodash/dist/lodash.min.js'] )
+              .pipe(gulp.dest(props.targetLocation+"/libs"));
+  
+        gulp.src(['./src/bower_components/jquery/dist/jquery.min.js'] )
+              .pipe(gulp.dest(props.targetLocation+"/libs"));
+      
+        gulp.src(['./src/bower_components/postal.js/lib/postal.min.js'] )
+              .pipe(gulp.dest(props.targetLocation+"/libs"));
   
     
 });
@@ -135,6 +144,5 @@ gulp.task('clean', function (  ) {
  
 
 gulp.task('build', ['build-react1','build-react2','build-jquery']);
-
 gulp.task('release', gulpsync.sync(['clean','build', 'sass']));
 gulp.task('dev', gulpsync.sync(['clean', 'build', 'sass','copy-assets', 'copy-html', 'watch-general', 'watch-code', 'serve']));

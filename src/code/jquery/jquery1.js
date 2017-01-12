@@ -9,6 +9,6 @@ class JQuery1
 
 }
 
-let jqVar = new JQuery1();
-export default jqVar;
+ jqVar = new JQuery1();
 
+ 
