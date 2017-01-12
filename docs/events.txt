@@ -1,0 +1,11 @@
+https://www.sitepoint.com/jquery-custom-events/
+
+
+$.event.trigger({
+	type: "newMessage",
+	message: "Hello World!",
+	time: new Date()
+});
+
+
+$(document).on("newMessage", newMessageHandler);
