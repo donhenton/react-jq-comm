@@ -1,4 +1,4 @@
-export default class JQuery1
+class JQuery1
 {
     constructor()
     {
@@ -8,3 +8,7 @@ export default class JQuery1
     }
 
 }
+
+let jqVar = new JQuery1();
+export default jqVar;
+
