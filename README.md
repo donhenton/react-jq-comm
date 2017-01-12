@@ -9,3 +9,8 @@ jquery app is there as well. They pass messages via $.event
 * all modules reference the global $
 
 
+
+## Demo
+https://donhenton.github.io/react-jq-comm/public_html/
+
+
