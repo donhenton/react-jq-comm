@@ -144,5 +144,5 @@ gulp.task('clean', function (  ) {
  
 
 gulp.task('build', ['build-react1','build-react2','build-jquery']);
-gulp.task('release', gulpsync.sync(['clean','build', 'sass']));
+gulp.task('release', gulpsync.sync(['clean','build', 'sass','copy-assets', 'copy-html']));
 gulp.task('dev', gulpsync.sync(['clean', 'build', 'sass','copy-assets', 'copy-html', 'watch-general', 'watch-code', 'serve']));

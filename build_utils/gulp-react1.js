@@ -10,12 +10,24 @@ var streamify = require('gulp-streamify');
 var gulpif = require("gulp-if");
 var props = require("./build_utils").props;
 var watch = require('gulp-watch');
+var envify = require('envify');
 
 function Bundle(srcLocation) {
 
+
+    var envType = 'development';
+    var debugType = true;
+    if (argv.production)
+    {
+        envType = 'production';
+        debugType = false;
+    }
+
+
+
     var Bundler = browserify({
         entries: srcLocation,
-        transform: [["babelify", {"presets": ["es2015", "react"]}]],
+        transform: [["babelify", {"presets": ["es2015","react"]}],["envify",{NODE_ENV: envType,'global': true, '_': 'purge', }]],
         extensions: ['.js'],
         debug: true,
         cache: {},
@@ -103,7 +115,7 @@ gulp.task('watch-code', function () {
     });
     watch(['./src/code/common/**/*.js'], function (events, done) {
 
-        gulp.start(['build-react1','build-react2']);
+        gulp.start(['build-react1', 'build-react2']);
     });
 
 
