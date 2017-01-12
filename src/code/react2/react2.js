@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-//import React1Code from './React1Code';
+import ReactButton from './../common/ReactButton';
 
 
 ReactDOM.render(
     
-        <div>hello from react2</div>
+        <ReactButton  eventLabel="react2" label="Hello From React 2" />
    
   , document.querySelector('#react2'));

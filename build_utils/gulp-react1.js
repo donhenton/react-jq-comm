@@ -101,7 +101,10 @@ gulp.task('watch-code', function () {
 
         gulp.start('build-jquery');
     });
+    watch(['./src/code/common/**/*.js'], function (events, done) {
 
+        gulp.start(['build-react1','build-react2']);
+    });
 
 
 });
