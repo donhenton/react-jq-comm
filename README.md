@@ -1,5 +1,5 @@
 
-#React Talking to JQuery
+# React Talking to JQuery
 
 A demonstration of embedded react and jquery code messaging via
 jquery events. Two separate react apps are bound to divs, and a third
